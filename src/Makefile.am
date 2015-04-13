@@ -17,7 +17,7 @@ else
 NO_OPT_CXXFLAGS = $(PTHREAD_CFLAGS)
 endif
 
-AM_CXXFLAGS = $(NO_OPT_CXXFLAGS) $(PROTOBUF_OPT_FLAG)
+AM_CXXFLAGS = $(NO_OPT_CXXFLAGS) $(PROTOBUF_OPT_FLAG) --std=c++11
 
 AM_LDFLAGS = $(PTHREAD_CFLAGS)
 
@@ -288,7 +288,9 @@ libprotoc_la_SOURCES =                                         \
   google/protobuf/compiler/javanano/javanano_primitive_field.cc \
   google/protobuf/compiler/javanano/javanano_primitive_field.h \
   google/protobuf/compiler/python/python_generator.cc          \
-  google/protobuf/compiler/ruby/ruby_generator.cc
+  google/protobuf/compiler/ruby/ruby_generator.cc              \
+  google/protobuf/compiler/rdsn/rdsn_generator.h               \
+  google/protobuf/compiler/rdsn/rdsn_generator.cc
 
 bin_PROGRAMS = protoc
 protoc_LDADD = $(PTHREAD_LIBS) libprotobuf.la libprotoc.la
