@@ -25,7 +25,7 @@ else
 NO_OPT_CXXFLAGS = $(PTHREAD_CFLAGS) $(PTHREAD_DEF) $(ZLIB_DEF)
 endif
 
-AM_CXXFLAGS = $(NO_OPT_CXXFLAGS) $(PROTOBUF_OPT_FLAG)
+AM_CXXFLAGS = $(NO_OPT_CXXFLAGS) $(PROTOBUF_OPT_FLAG) --std=c++11
 
 AM_LDFLAGS = $(PTHREAD_CFLAGS)
 
@@ -436,8 +436,11 @@ libprotoc_la_SOURCES =                                         \
   google/protobuf/compiler/objectivec/objectivec_primitive_field.h \
   google/protobuf/compiler/python/python_generator.cc          \
   google/protobuf/compiler/ruby/ruby_generator.cc              \
+  google/protobuf/compiler/ruby/ruby_generator.cc              \
   google/protobuf/compiler/csharp/csharp_doc_comment.cc        \
   google/protobuf/compiler/csharp/csharp_doc_comment.h         \
+  google/protobuf/compiler/rdsn/rdsn_generator.h               \
+  google/protobuf/compiler/rdsn/rdsn_generator.cc              \
   google/protobuf/compiler/csharp/csharp_enum.cc               \
   google/protobuf/compiler/csharp/csharp_enum.h                \
   google/protobuf/compiler/csharp/csharp_enum_field.cc         \
