@@ -83,6 +83,9 @@ set(libprotoc_files
   ${protobuf_source_dir}/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc
   ${protobuf_source_dir}/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc
   ${protobuf_source_dir}/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/rdsn/rdsn_generator.h
+  ${protobuf_source_dir}/src/google/protobuf/compiler/rdsn/rdsn_generator.cc
   ${protobuf_source_dir}/src/google/protobuf/compiler/plugin.cc
   ${protobuf_source_dir}/src/google/protobuf/compiler/plugin.pb.cc
   ${protobuf_source_dir}/src/google/protobuf/compiler/python/python_generator.cc
