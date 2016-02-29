@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+
 set(MY_PROJ_NAME Google.Protobuf)
 
 # Source files under CURRENT project directory will be automatically included.
