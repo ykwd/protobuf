@@ -23,9 +23,9 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -38,9 +38,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Release\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>TRACE</DefineConstants>
@@ -54,9 +54,9 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -69,9 +69,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Release\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>TRACE</DefineConstants>
@@ -85,9 +85,9 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -100,9 +100,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>${MyOutputPath}</OutputPath>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Release\</IntermediateOutputPath>
-    <DocumentationFile>${MyOutputPath}\Google.Protobuf.xml</DocumentationFile>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
     <DefineConstants>TRACE</DefineConstants>
