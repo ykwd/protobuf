@@ -1,26 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 
-set(MY_PROJ_NAME Google.Protobuf)
-
-# Source files under CURRENT project directory will be automatically included.
-# You can manually set MY_PROJ_SRC to include source files under other directories.
-set(MY_PROJ_SRC "")
-
-# Search mode for source files under CURRENT project directory?
-# "GLOB_RECURSE" for recursive search
-# "GLOB" for non-recursive search
-set(MY_SRC_SEARCH_MODE "GLOB_RECURSE")
-
-set(MY_PROJ_INC_PATH "")
-
-set(MY_PROJ_LIBS "")
-
-set(MY_PROJ_LIB_PATH "")
-
-# Extra files that will be installed
-set(MY_BINPLACES "")
+set(PROJ_NAME Google.Protobuf)
 
 execute_process(
-            COMMAND NuGet.exe install packages.config
+            COMMAND  "${CMAKE_CURRENT_SOURCE_DIR}/NuGet.exe" "install" "${CMAKE_CURRENT_SOURCE_DIR}/packages.config"
             )
-dsn_add_cs_shared_library()
+execute_process(COMMAND echo "bbbbbbb")
+include(dsn.ext.csharp.cmake)
