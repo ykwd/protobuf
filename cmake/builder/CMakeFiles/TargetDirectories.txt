@@ -1,6 +1,0 @@
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/libprotoc.dir
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/ALL_BUILD.dir
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/libprotobuf.dir
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/libprotobuf-lite.dir
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/ZERO_CHECK.dir
-C:/Users/v-yank/Desktop/temp/protobuf/cmake/builder/CMakeFiles/protoc.dir
