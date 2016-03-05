@@ -123,7 +123,6 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DD26F57E-60F2-4F37-A616-D219A9BF338F}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
     <RootNamespace>thrift</RootNamespace>
     <ProjectName>libthrift</ProjectName>
   </PropertyGroup>
