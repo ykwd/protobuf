@@ -46,6 +46,7 @@
 #include <google/protobuf/compiler/cpp/cpp_file.h>
 #include <google/protobuf/compiler/cpp/cpp_helpers.h>
 #include <google/protobuf/io/zero_copy_stream.h>
+#include <google/protobuf/compiler/cpp/cpp_generator.h>
 
 namespace google {
 namespace protobuf {
@@ -114,7 +115,6 @@ bool RdsnGenerator::Generate(const FileDescriptor* file,
                             string* error) const {
   vector<pair<string, string> > options;
   ParseGeneratorParameter(parameter, &options);
-
   string basename = StripProto(file->name());
   basename.append(".pb");
 
@@ -122,8 +122,9 @@ bool RdsnGenerator::Generate(const FileDescriptor* file,
   vars["pname"] = StripProto(file->name());
   vars["nm"] = file->package();
 
+  string output_filename = google::protobuf::compiler::cpp::_rdsn_use(file, parameter, generator_context, error);
   google::protobuf::scoped_ptr<io::ZeroCopyOutputStream> output(
-      generator_context->Open(basename + ".php"));
+      generator_context->Open(output_filename + ".php"));
   io::Printer pt(output.get(), '@');  
   pt.Print("<?php\n");
   pt.Print(vars, "$_PROG = new t_program(\"@pname@\");\n");
