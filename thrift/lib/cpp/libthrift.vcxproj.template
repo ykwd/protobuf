@@ -133,28 +133,24 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -162,7 +158,6 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -170,7 +165,6 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -178,7 +172,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -186,7 +180,6 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
-    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -226,27 +219,35 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;c:\rdsn\include\ext;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|Win32'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDir)\src\;c:\rdsn\include\ext;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-mt|x64'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|Win32'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-mt|x64'">
     <IncludePath>$(ProjectDir)\src\;$(ProjectDir)\src\thrift\windows\;${BOOST_DIR}\include;${BOOST_DIR}\;$(OPENSSL_ROOT_DIR)\include\;$(IncludePath)</IncludePath>
+    <OutDir>${MY_OUTPUT_PATH}</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
