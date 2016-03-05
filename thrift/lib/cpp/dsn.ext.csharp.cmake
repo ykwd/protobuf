@@ -9,6 +9,8 @@ set(BOOST_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_NAME}.vcxproj.template" "${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_NAME}.vcxproj")
 
+set(MY_PLATFORM "x64")
+
 execute_process(
-    COMMAND ${MY_CSC} "${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_NAME}.vcxproj"
+    COMMAND ${MY_CSC} "${CMAKE_CURRENT_SOURCE_DIR}/${PROJ_NAME}.vcxproj" "/property:Platform=${MY_PLATFORM}"
     )
