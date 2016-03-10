@@ -137,6 +137,7 @@ else (MSVC)
   # When building with "make", "lib" prefix will be added automatically by
   # the build tool.
   set(LIB_PREFIX)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 endif (MSVC)
 
 include(libprotobuf-lite.cmake)

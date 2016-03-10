@@ -114,7 +114,8 @@ std::string GetFileNamespace(const FileDescriptor* descriptor) {
   if (descriptor->options().has_csharp_namespace()) {
     return descriptor->options().csharp_namespace();
   }
-  return UnderscoresToCamelCase(descriptor->package(), true, true);
+  return descriptor->package();
+  //return UnderscoresToCamelCase(descriptor->package(), true, true);
 }
 
 // Returns the Pascal-cased last part of the proto file. For example,
