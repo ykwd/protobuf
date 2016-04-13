@@ -136,11 +136,11 @@ bool RdsnGenerator::Generate(const FileDescriptor* file,
   // includes
   for (int i = 0; i < file->dependency_count(); i++) 
   {
-      pt.Print("$tmp = new t_program(\"@inc@\";\n",
+      pt.Print("$tmp = new t_program(\"@inc@\");\n",
           "inc",
           file->dependency(i)->name()
           );
-      pt.Print("$_PROG->includes[$tmp->name] = $tmp\n");
+      pt.Print("$_PROG->includes[$tmp->name] = $tmp;\n");
       pt.Print("$tmp->namespaces[\"cpp\"] = \"@pkg@\";\n", "pkg", file->dependency(i)->package());
   }
   pt.Print("\n");
