@@ -50,6 +50,36 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RelWithDebInfo|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\RelWithDebInfo\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MinSizeRel|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\MinSizeRel\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -81,7 +111,37 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RelWithDebInfo|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\RelWithDebInfo\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MinSizeRel|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\MinSizeRel\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -102,6 +162,36 @@
     <Optimize>true</Optimize>
     <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
     <IntermediateOutputPath>obj\Release\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RelWithDebInfo|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\RelWithDebInfo\</IntermediateOutputPath>
+    <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'MinSizeRel|x64' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>${MY_OUTPUT_PATH}</OutputPath>
+    <IntermediateOutputPath>obj\MinSizeRel\</IntermediateOutputPath>
     <DocumentationFile>${MY_OUTPUT_PATH}\Google.Protobuf.xml</DocumentationFile>
     <NoWarn>
     </NoWarn>
